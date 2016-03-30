@@ -21,7 +21,7 @@ class MODSPlugin
                    MODS_PLUGIN_VERSION);
 
         $elementSetMetadata = array( 'name' => 'MODS', 
-                                     'description' => 'MODS support according to Columbia University Libraries MODS profile');
+                                     'description' => 'MODS support LIS462-20 Digital Libraries (Simmons SLIS West) MODS Profile');
         
         $mods = new MODSPlugin;
         insert_element_set($elementSetMetadata, $mods->getElements());
