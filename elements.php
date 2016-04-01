@@ -1,138 +1,187 @@
 <?php
 //Plugin modified for LIS462-20, Simmons SLIS West Digital Libraries class, Spring 2016. Forked from CUL LDPD profile MODS, adapted to flat representation in Omeka
-$elements = array(    
-array(
-	'name' => 'MODS:Part_Type',
-	'description' => 'Type of part (ex. page)',
+$elements = array(    array(
+	'name' => 'MODS:identifier',   
+        'description' => 'Use filename (without extension or numeric id)',
 ),
-    
+
 array(
-	'name' => 'MODS:Part_Order',
-	'description' => 'Part order (integer)',
+	'name' => 'MODS:titleInfo',   
+        'description' => 'Title',
 ),
-    
+
 array(
-	'name' => 'MODS:Name_Type',
-	'description' => 'Name Type (personal, corporate, conference, family)',
+	'name' => 'MODS:part_id',   
+        'description' => 'Use filename (part set can be repeated)',
 ),
-    
+
 array(
-	'name' => 'MODS:Name_NamePart_Date',
-	'description' => 'Name Dates (Birth Year--Death Year)',
+	'name' => 'MODS:part_type',   
+        'description' => 'Type of part (ex. page)',
 ),
-    
+
 array(
-	'name' => 'MODS:Name_NamePart_Authority',
-	'description' => 'Name Authority',
+	'name' => 'MODS:part_order',   
+        'description' => 'Part order (integer)',
 ),
-    
+
 array(
-	'name' => 'MODS:Name_Role_RoleTerm',
-	'description' => 'Role of named entity; use marc relator vocabulary',
+	'name' => 'MODS:name1',   
+        'description' => 'Name',
 ),
-    
+
 array(
-	'name' => 'MODS:Name_Role_RoleTerm_Type',
-	'description' => 'RoleTerm type (text or code)',
+	'name' => 'MODS:name1_date',   
+        'description' => 'Name Dates (Birth Year--Death Year)',
 ),
-    
+
 array(
-	'name' => 'MODS:Name_Role_RoleTerm_Authority',
-	'description' => 'Role Authority or Code Source',
+	'name' => 'MODS:name1_role',   
+        'description' => 'Role of named entity; use marc relator vocabulary',
 ),
-    
+
 array(
-	'name' => 'MODS:Genre',
-	'description' => 'A term or terms that designate a category characterizing a particular style, form, or content, such as artistic, musical, literary composition, etc.',
+	'name' => 'MODS:name2',   
+        'description' => 'Name',
 ),
-    
+
 array(
-	'name' => 'MODS:Genre_Authority',
-	'description' => 'Use AAT',
+	'name' => 'MODS:name2_date',   
+        'description' => 'Name Dates (Birth Year--Death Year)',
 ),
-    
+
 array(
-	'name' => 'MODS:OriginInfo_DateCreated_KeyDate',
-	'description' => 'Yes or No; only one date may be chosen as Key Date=Yes.',
+	'name' => 'MODS:name2_role',   
+        'description' => 'Role of named entity; use marc relator vocabulary',
 ),
-    
+
 array(
-	'name' => 'MODS:OriginInfo_DateCreated_Encoding',
-	'description' => 'Date encoding',
+	'name' => 'MODS:name3',   
+        'description' => 'Name',
 ),
-    
+
 array(
-	'name' => 'MODS:OriginInfo_DateCaptured',
-	'description' => 'Date digitized',
+	'name' => 'MODS:name3_date',   
+        'description' => 'Name Dates (Birth Year--Death Year)',
 ),
-    
+
 array(
-	'name' => 'MODS:OriginInfo_DateCaptured_Encoding',
-	'description' => 'Date encoding',
+	'name' => 'MODS:name3_role',   
+        'description' => 'Role of named entity; use marc relator vocabulary',
 ),
-    
+
 array(
-	'name' => 'MODS:OriginInfo:Location',
-	'description' => 'Repository Address',
+	'name' => 'MODS:typeofResource',   
+        'description' => 'A term or terms that designate a category characterizing a particular style, form, or content, such as artistic, musical, literary composition, etc.',
 ),
-    
+
 array(
-	'name' => 'MODS:OriginInfo:RepositoryName',
-	'description' => 'Repository Name',
+	'name' => 'MODS:genre',   
+        'description' => 'Use AAT',
 ),
-    
+
 array(
-	'name' => 'MODS:Language_LanguageTerm',
-	'description' => 'Language of the material',
+	'name' => 'MODS:originInfo_Place',   
+        'description' => 'Place resource was created',
 ),
-    
+
 array(
-	'name' => 'MODS:Language_LanguageTerm_Authority',
-	'description' => 'Language term authority',
+	'name' => 'MODS:originInfo_Place_Auth',   
+        'description' => 'Use LCNAF or TGN',
 ),
-    
+
 array(
-	'name' => 'MODS:Language_LanguageTerm_Type',
-	'description' => 'Language term type (text or code)',
+	'name' => 'MODS:originInfo_DateCreated',   
+        'description' => 'Date orig resource created',
 ),
-    
+
 array(
-	'name' => 'MODS:PhysicalDescription_DigitalOrigin',
-	'description' => 'Reformatted digital',
+	'name' => 'MODS:originInfo_DateCaptured',   
+        'description' => 'Date digitized',
 ),
-    
+
 array(
-	'name' => 'MODS:Subject_Authority',
-	'description' => 'Ex. LCSH',
+	'name' => 'MODS:language',   
+        'description' => 'Language of the material',
 ),
-    
+
 array(
-	'name' => 'MODS:Subject_Geographic_Authority',
-	'description' => 'Geographic subject term authority',
+	'name' => 'MODS:language_code',   
+        'description' => 'language code',
 ),
-    
+
 array(
-	'name' => 'MODS:Identifier',
-	'description' => 'Put URL of item here.',
+	'name' => 'MODS:physicalDescription_extent',   
+        'description' => 'extent of original resource (pages, etc)',
 ),
-    
+
 array(
-	'name' => 'MODS:Identifier_Authority',
-	'description' => 'local',
+	'name' => 'MODS:physicalDescription_mediatype',   
+        'description' => 'use internet media type list',
 ),
-    
+
 array(
-	'name' => 'MODS:AccessCondition_Type',
-	'description' => 'List type of access the rights statement concerns - i.e., use and reproduction',
+	'name' => 'MODS:physicalDescription_digitalorigin',   
+        'description' => 'Reformatted digital',
 ),
-    
+
 array(
-	'name' => 'MODS:RecordInfo_LanguageOfCataloging',
-	'description' => 'Metadata language',
+	'name' => 'MODS:abstract',   
+        'description' => 'Abstract',
 ),
-    
+
 array(
-	'name' => 'MODS:RecordInfo_RecordContentSource',
-	'description' => 'Code for organization responsible for record creation',  
-      )
+	'name' => 'MODS:subject_1',   
+        'description' => 'Subject',
+),
+
+array(
+	'name' => 'MODS:subj_auth_1',   
+        'description' => 'Ex. LCSH',
+),
+
+array(
+	'name' => 'MODS:subject_2',   
+        'description' => 'Subject',
+),
+
+array(
+	'name' => 'MODS:subj_auth_2',   
+        'description' => 'Ex. LCSH',
+),
+
+array(
+	'name' => 'MODS:subject_3',   
+        'description' => 'Subject',
+),
+
+array(
+	'name' => 'MODS:subj_auth_3',   
+        'description' => 'Ex. LCSH',
+),
+
+array(
+	'name' => 'MODS:subject_4',   
+        'description' => 'Subject',
+),
+
+array(
+	'name' => 'MODS:subj_auth_4',   
+        'description' => 'Ex. LCSH',
+),
+
+array(
+	'name' => 'MODS:accessCondition',   
+        'description' => 'List type of access the rights statement concerns - i.e., use and reproduction',
+),
+
+array(
+	'name' => 'MODS:recordInfo_LangOfCat',   
+        'description' => 'Metadata language',
+),
+
+array(
+	'name' => 'MODS:recordInfo_ContentSrc',   
+        'description' => 'Code for organization responsible for record creation',     
+          )
 );
