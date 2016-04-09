@@ -381,6 +381,79 @@ array(
       'description' => 'Role of named entity; use marc relator vocabulary',
 ),
 array(
+	'name' => 'name4',
+      'description' => 'Name',
+),
+array(
+	'name' => 'name4_date',
+      'description' => 'Name Dates (Birth Year--Death Year)',
+),
+array(
+	'name' => 'name4_role',
+      'description' => 'Role of named entity; use marc relator vocabulary',
+),
+array(
+	'name' => 'name5',
+      'description' => 'Name',
+),
+array(
+	'name' => 'name5_role',
+      'description' => 'Role of named entity; use marc relator vocabulary',
+),
+array(
+	'name' => 'name6',
+      'description' => 'Name',
+),
+array(
+	'name' => 'name6_role',
+      'description' => 'Role of named entity; use marc relator vocabulary',
+),
+array(
+	'name' => 'name7',
+      'description' => 'Name',
+),
+array(
+	'name' => 'name7_role',
+      'description' => 'Role of named entity; use marc relator vocabulary',
+),
+array(
+	'name' => 'name8',
+      'description' => 'Name',
+),
+array(
+	'name' => 'name8_role',
+      'description' => 'Role of named entity; use marc relator vocabulary',
+),
+array(
+	'name' => 'name9',
+      'description' => 'Name',
+),
+array(
+	'name' => 'name9_role',
+      'description' => 'Role of named entity; use marc relator vocabulary',
+),array(
+	'name' => 'name10',
+      'description' => 'Name',
+),
+array(
+	'name' => 'name10_role',
+      'description' => 'Role of named entity; use marc relator vocabulary',
+),array(
+	'name' => 'name11',
+      'description' => 'Name',
+),
+array(
+	'name' => 'name11_role',
+      'description' => 'Role of named entity; use marc relator vocabulary',
+),array(
+	'name' => 'name12',
+      'description' => 'Name',
+),
+array(
+	'name' => 'name12_role',
+      'description' => 'Role of named entity; use marc relator vocabulary',
+)
+array(
 	'name' => 'typeofResource',
       'description' => 'A term or terms that designate a category characterizing a particular style, form, or content, such as artistic, musical, literary composition, etc.',
 ),
@@ -461,6 +534,14 @@ array(
       'description' => 'Ex. LCSH',
 ),
 array(
+	'name' => 'subject5',
+      'description' => 'Subject',
+),
+array(
+	'name' => 'subject5_auth',
+      'description' => 'Ex. LCSH',
+),
+array(
 	'name' => 'accessCondition',
       'description' => 'List type of access the rights statement concerns - i.e., use and reproduction',
 ),
@@ -471,5 +552,9 @@ array(
 array(
 	'name' => 'recordInfo_contentsrc',
       'description' => 'Code for organization responsible for record creation',
+),
+array(
+	'name' => 'itemRelations',
+	'description' => 'Enter the identifier for items (e.g., photographs) referenced in letters and vice versa.',
 )
 );
