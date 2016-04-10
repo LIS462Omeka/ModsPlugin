@@ -57,6 +57,10 @@ array(
 	'name' => 'Place Created-Authority',
 	'description' => 'Geographic subject term authority',
 	),
+array(
+	'name' => 'Date Created',
+	'description' => 'Date resource was created',
+	),
 array(	
 	'name' => 'Date Captured',
 	'description' => 'Date digitzed',
